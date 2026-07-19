@@ -19,5 +19,5 @@ gcc readpid.c -o readpic.exe
 # yaz aracını derlemek için / To compile yaz:
 gcc yaz.c -o yaz.exe  
 
-#using / kullanım  
+#using / kullanım  [ADMIN POWERSHELL]  
 .\readpic > [blabla].txt and enter the PID
