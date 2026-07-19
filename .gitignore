@@ -1,0 +1,8 @@
+#loglar
+*.txt
+*.exe
+
+#MMMH
+hedef.c
+main.c
+main2.c
