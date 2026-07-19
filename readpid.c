@@ -12,7 +12,7 @@ void BellekBolgeleriniYazdir(DWORD pid) {
     }
 
     MEMORY_BASIC_INFORMATION mbi;
-    PVOID adres = 0; // Bellek taramaya 0x0 adresinden başlıyoruz
+    PVOID adres = 0; 
 
     printf("\n--- PID %lu ICIN BELLEK HARITASI ---\n", pid);
     printf("%-20s %-20s %-15s\n", "Taban Adresi (Base)", "Boyut (Byte)", "Durum");
@@ -46,7 +46,7 @@ int main() {
     }
 
     printf("\nCikmak icin ENTER'a bas...\n");
-    getchar(); // Scanf'ten kalan buffer'ı temizler
+    getchar();
     getchar(); // Bekler
     
     return 0;
