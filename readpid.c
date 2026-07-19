@@ -47,7 +47,7 @@ int main() {
 
     printf("\nCikmak icin ENTER'a bas...\n");
     getchar();
-    getchar(); // Bekler
+    getchar();
     
     return 0;
 }
