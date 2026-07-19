@@ -10,7 +10,6 @@ int main() {
     printf("Hedef Uygulamanin PID degerini girin (Decimal): ");
     if (scanf("%lu", &processID) != 1) return 1;
 
-    // DİKKAT: Bu kez sadece OKUMA değil, YAZMA (WRITE ve OPERATION) yetkisi alıyoruz!
     HANDLE hProcess = OpenProcess(PROCESS_VM_WRITE | PROCESS_VM_OPERATION, FALSE, processID);
 
     if (hProcess == NULL) {
@@ -27,8 +26,6 @@ int main() {
     scanf("%d", &newValue);
 
     SIZE_T bytesWritten;
-
-    // İŞTE SİHRİN GERÇEKLEŞTİĞİ YER: Hedefin belleğini zorla değiştiriyoruz!
     if (WriteProcessMemory(hProcess, (LPVOID)memoryAddress, &newValue, sizeof(newValue), &bytesWritten)) {
         printf("\n==========================================\n");
         printf("HACK BASARILI!\n");
